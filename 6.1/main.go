@@ -1,3 +1,4 @@
+// リスト6.1 Goで文字列を返すプログラム
 package main
 
 import (
