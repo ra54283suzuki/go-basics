@@ -14,7 +14,7 @@ const cookieSessionId = "sessionId"
 // セッションが開始されていることを保証する。
 //
 // セッションが存在しなければ、新しく発行する。
-func ensureSesion(w http.ResponseWriter, r *http.Request) (string, error) {
+func ensureSession(w http.ResponseWriter, r *http.Request) (string, error) {
 	c, err := r.Cookie(cookieSessionId)
 	if err == http.ErrNoCookie {
 		// CookieにセッションIDが入っていない場合は、新しく発行して返す
